@@ -41,9 +41,6 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
 
     },
-    "config": {
-        "sort-packages": true
-    },
     "extra": {
         "laravel": {
             "providers": [
@@ -53,5 +50,12 @@
                 "Vouchers": "BeyondCode\\Vouchers\\Facades\\Vouchers"
             }
         }
-    }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
